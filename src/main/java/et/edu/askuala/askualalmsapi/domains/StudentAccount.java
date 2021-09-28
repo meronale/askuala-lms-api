@@ -1,18 +1,17 @@
 package et.edu.askuala.askualalmsapi.domains;
 
-
-import jdk.jfr.DataAmount;
+import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
-import lombok.Data;
+
 
 @Data
 @Entity
-public class teacherAccount {
+public class StudentAccount {
 
 
     @Id
@@ -53,6 +52,7 @@ public class teacherAccount {
     private Integer password;
 
     private Boolean isVerified= Boolean.FALSE;
+
 
 
 
